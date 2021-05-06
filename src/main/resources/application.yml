@@ -1,0 +1,46 @@
+nextcloud:
+  mkcol: MKCOL
+  propfind: PROPFIND
+  get: GET
+  put: PUT
+
+quarkus:
+  swagger-ui:
+    always-include: true
+    path: /services
+
+"%dev":
+  quarkus:
+    http:
+      port: 7001
+      cors:
+        ~: true
+        origins: http://localhost:8000
+        methods: GET, POST, PUT
+      limits:
+        max-body-size: 50000K
+
+    datasource:
+      db-kind: postgresql
+      jdbc:
+        url: jdbc:postgresql://
+      username: 
+      password: 
+      
+"%prod":
+  quarkus:
+    http:
+      port: 9001
+      cors:
+        ~: true
+        origins: http://localhost:8000
+        methods: GET, POST, PUT
+      limits:
+        max-body-size: 50000K
+
+    datasource:
+      db-kind: postgresql
+      jdbc:
+        url: jdbc:postgresql://
+      username: 
+      password: 

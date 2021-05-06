@@ -1,0 +1,35 @@
+nextcloud:
+  mkcol: MKCOL
+  propfind: PROPFIND
+  get: GET
+  put: PUT
+
+quarkus:
+  banner:
+    enabled: true
+    path: banner.txt
+
+  http:
+    cors:
+      ~: true
+      origins: http://loclahost:8000
+      methods: GET, POST, PUT
+    limits:
+      max-body-size: 50000K
+    port: 9001
+
+  datasource:
+    db-kind: postgresql
+    jdbc:
+      url: jdbc:postgresql://10.30.3.240:5433/dbgestiondocumental
+    username: jdominguez
+    password: h5WTq
+
+  swagger-ui:
+    always-include: true
+    path: /services
+
+'%prod':
+  quarkus:
+    http:
+      port: 9005

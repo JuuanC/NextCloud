@@ -1,0 +1,12 @@
+ssaver\gob\mx\util\Utilities.class
+ssaver\gob\mx\service\NextCloudService.class
+ssaver\gob\mx\exception\CustomException.class
+ssaver\gob\mx\dto\RequestDTO.class
+ssaver\gob\mx\util\ConstansException.class
+ssaver\gob\mx\dto\ResponseDTO.class
+ssaver\gob\mx\exception\InterceptorException.class
+ssaver\gob\mx\model\Documento.class
+ssaver\gob\mx\repository\DocumentoRepository.class
+ssaver\gob\mx\util\ConstansGeneral.class
+META-INF\panache-archive.marker
+ssaver\gob\mx\resource\NextCloudResource.class
